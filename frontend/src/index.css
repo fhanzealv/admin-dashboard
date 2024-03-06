@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  min-height:100vh;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+.sidebar{
+  height: 100%;
+  width:250px;
+  padding: 10px 14px;
+  @apply fixed left-0 top-0 bg-green-300;
+}
+
+.logo-image{
+  @apply  flex justify-center;
+  min-width: 45px;
+}
+
+.logo-name img{
+  width: 40px;
+  object-fit:cover;
+
+}
