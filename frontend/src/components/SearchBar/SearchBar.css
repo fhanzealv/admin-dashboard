@@ -1,0 +1,11 @@
+.search-wrap{
+    @apply relative border-2 rounded-xl overflow-hidden  flex items-center;
+}
+
+.search-wrap input{
+    @apply w-full h-full px-4 rounded-xl text-black;
+}
+
+.ico-bar{
+    @apply absolute right-0 ;
+}

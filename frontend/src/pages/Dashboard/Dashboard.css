@@ -1,0 +1,50 @@
+.dashboard{
+position:relative;
+color: var(--text-color);
+ background-color: var(--primary-color);   
+ width: calc(100% - 250px);
+left:250px;
+height: 100vh;
+transition: all 0.3s ease;
+padding: 10px 14px;
+}
+
+.top{
+    padding: 10px 14px;
+    top:0;
+    transition: all 0.3s ease;
+}
+
+.sidebar{
+    transition: all 0.3s ease;
+
+}
+.sidebar.side-close{
+    width:73px;
+
+}
+
+.side__links li:hover{
+    @apply bg-green-300;
+}
+
+.side__links li:active{
+    @apply bg-red-300;
+}
+
+.sidebar.side-close ~ .dashboard .top{
+    left:73px;
+    width: calc(100% - 73px);
+}
+
+.text-link{
+    transition: all 0.3s ease;
+}
+
+.sidebar.side-close .logo_name{
+    opacity: 0;
+}
+
+.sidebar.side-close li a .text-link {
+    opacity:0;
+}

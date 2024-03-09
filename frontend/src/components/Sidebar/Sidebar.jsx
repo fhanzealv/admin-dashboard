@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faFire, faHouse, faMoon, faSignOut, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFire, faHouse, faMoon, faSignIn, faSignOut, faStar } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
 
@@ -16,7 +16,7 @@ const Sidebar = () => {
             }
   return (
     <nav className='sidebar'>
-        <div className='brands flex items-center'>
+        <div className='brands h-[45px] flex items-center'>
 
         <div className='logo-image'>
             <img src='../../src/assets/react.svg' alt='' />
@@ -25,35 +25,35 @@ const Sidebar = () => {
         <span className='logo_name '>fhanzeMarket</span>
         </div>
 
-        <div className='side-menu mt-[40px] h-[calc(100vh-90px)] flex flex-col justify-between'>
+        <div className='side-menu mt-[40px] h-[calc(100vh-135px)] flex flex-col justify-between'>
             <ul className='side__links'>
                 <li><a href="">
                 <FontAwesomeIcon icon={faHouse} className='side_ico' />
-                    <span className=''>Home</span>
+                    <span className='text-link'>Home</span>
                     </a></li>
                     <li><a href="">
                 <FontAwesomeIcon icon={faFire} className='side_ico' />
-                    <span className=''>Trending</span>
+                    <span className='text-link'>Trending</span>
                     </a></li>
                     <li><a href="">
                 <FontAwesomeIcon icon={faStar} className='side_ico' />
-                    <span className=''>Popular</span>
+                    <span className='text-link'>Popular</span>
                     </a></li>
                     <li><a href="">
                 <FontAwesomeIcon icon={faHouse} className='side_ico' />
-                    <span className=''>Home</span>
+                    <span className='text-link'>Home</span>
                     </a></li>
             </ul>
 
-            <ul className='user-section'>
+            <ul className='user-section border-t border-[var(--sec-color)]'>
             <li><a href="">
-                <FontAwesomeIcon icon={faSignOut} className='side_ico' />
-                    <span className=''>Logout</span>
+                <FontAwesomeIcon icon={faSignIn} className='side_ico' />
+                    <span className='text-link'>Login</span>
                     </a></li>
             
                     <li className='toggle-mode'><a href="">
                 <FontAwesomeIcon icon={faMoon} className='side_ico' />
-                    <span className=''>Dark Mode</span>
+                    <span className='text-link'>Dark Mode</span>
                     </a>
                     
                     <button className='input-mode ' onClick={togActive} >

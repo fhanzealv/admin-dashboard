@@ -4,8 +4,9 @@
 
 
 :root{
-  --primary-color: #ffff;
-  --nav-color: rgb(203 213 225) ;
+  --primary-color: rgb(241 245 249);
+  --sec-color: #343434;
+  --nav-color: rgba(255, 255, 255, 0.90);
   --text-color: #343434;
   --box1-color: #343434;
   --box2-color: #fff;
@@ -25,7 +26,8 @@ transition: all 0.3s ease;
 
 body.dark{
   --primary-color: #343434;
-  --nav-color: #9999;
+  --sec-color: #ffff;
+  --nav-color: rgb(34, 34, 34);
   --text-color: #fff;
   --box1-color: #fff;
   --box2-color: #343434;
@@ -37,7 +39,7 @@ body.dark{
   width:250px;
   padding: 10px 14px;
   background: var(--nav-color);
-  @apply fixed left-0 top-0 text-[var(--text-color)]  border-r;
+  @apply fixed left-0 top-0 text-[var(--text-color)]  border-r ;
 }
 
 
