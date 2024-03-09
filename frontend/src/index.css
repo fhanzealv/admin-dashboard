@@ -3,22 +3,43 @@
 @tailwind utilities;
 
 
+:root{
+  --primary-color: #ffff;
+  --nav-color: rgb(203 213 225) ;
+  --text-color: #343434;
+  --box1-color: #343434;
+  --box2-color: #fff;
+  --icon-color: rgb(96 165 250);
+}
+
 
 body{
+  background: var(--primary-color);
   min-height:100vh;
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
   font-style: normal;
+transition: all 0.3s ease;
 
+}
 
+body.dark{
+  --primary-color: #343434;
+  --nav-color: #9999;
+  --text-color: #fff;
+  --box1-color: #fff;
+  --box2-color: #343434;
+  --icon-color: #fff;
 }
 
 .sidebar{
   height: 100%;
   width:250px;
   padding: 10px 14px;
-  @apply fixed left-0 top-0 bg-green-300;
+  background: var(--nav-color);
+  @apply fixed left-0 top-0 text-[var(--text-color)]  border-r;
 }
+
 
 .logo-image{
   @apply  flex justify-center;
@@ -29,4 +50,54 @@ body{
   width: 40px;
   object-fit:cover;
 
+}
+
+.side__links a,
+.user-section a
+{
+  @apply h-[50px] flex items-center;
+}
+
+
+.side_ico{
+  @apply flex items-center justify-center  size-5 px-2  text-[var(--icon-color)];
+  /* font-size:40px;
+  min-width:45px; */
+  height: 100%;
+}
+
+.toggle-mode{
+  @apply flex items-center;
+}
+
+.input-mode{
+  height:50px;
+  min-width:45px;
+  right: 14px;
+  @apply flex items-center justify-center absolute;
+}
+
+.switch-mode{
+  position: relative;
+  display:inline-block;
+  height: 22px;
+  width: 40px;
+  border-radius: 25px;
+  @apply bg-[var(--box1-color)] ;
+}
+
+.switch-mode::before{
+  content:'';
+  position: absolute;
+  left: 5px;
+  height: 15px;
+  width: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  @apply bg-[var(--box2-color)] border rounded-md;
+  transition: all 0.3s linear;
+}
+
+body.dark .switch-mode::before{
+  left:20px;
 }
