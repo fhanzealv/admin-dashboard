@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sideakun = () => {
   return (
-    <div>Sideakun</div>
+    <div className='flex items-center'>Sideakun</div>
   )
 }
 
