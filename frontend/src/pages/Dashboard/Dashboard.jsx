@@ -13,11 +13,11 @@ const Dashboard = () => {
             <Sideakun />
         </div>
 
-        <div className="content pt-16">
-          <div className='title flex items-center m-[70px_0_30px]'>
+        <section className="content pt-16">
+          <div className='content2 title flex items-center m-[70px_0_30px]'>
 qweqwe
           </div>
-        </div>
+        </section>
     </div>
   )
 }

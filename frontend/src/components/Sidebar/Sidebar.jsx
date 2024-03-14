@@ -27,7 +27,7 @@ const Sidebar = () => {
 
         <div className='side-menu mt-[40px] h-[calc(100vh-135px)] flex flex-col justify-between'>
             <ul className='side__links'>
-                <li><a href="">
+                <li className=''><a href="">
                 <FontAwesomeIcon icon={faHouse} className='side_ico' />
                     <span className='text-link'>Home</span>
                     </a></li>

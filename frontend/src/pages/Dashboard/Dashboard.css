@@ -32,10 +32,19 @@ padding: 10px 14px;
     @apply bg-red-300;
 }
 
-.sidebar.side-close ~ .dashboard .top{
+.sidebar.side-close ~ .dashboard {
     left:73px;
     width: calc(100% - 73px);
 }
+
+.sidebar.side-close ~ .dashboard .top {
+    left:73px;
+    width: calc(100% - 73px);
+}
+
+
+
+
 
 .text-link{
     transition: all 0.3s ease;
