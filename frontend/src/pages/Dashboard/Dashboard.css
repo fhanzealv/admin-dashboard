@@ -42,7 +42,10 @@ padding: 10px 14px;
     width: calc(100% - 73px);
 }
 
-
+.sidebar.side-close ~ .dashboard .content {
+    left:73px;
+    width: calc(100% - 73px);
+}
 
 
 
